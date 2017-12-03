@@ -11,18 +11,17 @@ class Lineal{
 				break;
 			}
 		}
-		return mostrar(index);//paso el parametro para poder ser mostrado
+		return mostrar(index); //passed the parameter to be shown
 		}
 		
 		mostrar(int index){	
-	    	cout<<"El indice del elemento a buscar es: "<<endl;
-			cout<<index<<endl;//muestro el valor
+	    	cout<<"The index of the element to look for is: "<<endl;
+			cout<<index<<endl;
 		}
 };
 
 
 int main(){
-	int cadena;
 	int data;
 	int cont =0;
 	string e;
@@ -36,17 +35,17 @@ int main(){
   	for (int i=0; i<e.length(); ++i){
   		b[i] = e[i];
   		if(b[i] != ','){
-  			cont = cont +1;
+  			cont = cont +1; //increase cont
 	  	}
   	}
   	
-  	int a [cont];
+  	int a [cont]; //size of the array cont
   	int posiciones = 0;
   	
   	for(int i =0; i<e.length(); ++i){
   		if(b[i] != ','){
-  			a[posiciones] = (int)b[i] - '0';
-  			posiciones = posiciones +1;
+  			a[posiciones] = (int)b[i] - '0'; //convert from char to int
+  			posiciones = posiciones +1; //increase positions
 	  	}
   	}
 	
