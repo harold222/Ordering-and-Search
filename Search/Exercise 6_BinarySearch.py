@@ -1,4 +1,4 @@
-﻿
+__author__= "Harold Pedraza"
 def BinarySearch(A, x):
     lowerBound =0
     upperBound = len(A)-1
@@ -10,7 +10,7 @@ def BinarySearch(A, x):
             break
         else:
             if x < A[middlepoint]:
-                upperBound = middlepoint - 1
+                upperBound = middlepoint - 1 #it is decreasing
             else:
                 lowerBound = middlepoint + 1
     if lowerBound == upperBound and A[middlepoint] == x:
@@ -21,12 +21,11 @@ def main():
     print("Exercise of BINARY SEARCH: ")
     print(" ")
     print("Enter the string of numbers separated by commas: ")
-    cadena = input()
+    string = input()
     print("Enter the item to search: ")
     x = input()
-    A = cadena.split(",")
+    A = string.split(",")
     print(" ")
     print("The index of the element to look for is: ")
     print(BinarySearch(A,x)) 
-
 main()
