@@ -23,15 +23,11 @@ def quick_sort(numeros):
         return quick_sort(less), pivot, quick_sort(greater) #return the obtained values 
 
 def main():
-    print("Exercise of QUICK SORT: ")
-    print(" ")
+    print("Exercise of QUICK SORT:\n")
     print("Enter the string of numbers separated by commas: ")
-    cadena = input()
+    string = input()
     numeros = int()
-    numeros = cadena.split(",")
-    print(" ")
-    print(" ")
-    print("The organized numbers are :")
-
+    numeros = string.split(",")
+    print("\nThe organized numbers are:\n")
     print (quick_sort(numeros))
 main()
