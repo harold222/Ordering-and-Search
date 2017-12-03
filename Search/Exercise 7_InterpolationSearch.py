@@ -6,7 +6,7 @@ def InterpolationSearch(A, x):
     index = -1
 
     while lowerBound < upperBound: 
-        middlepoint = (lowerBound + ((upperBound - lowerBound) // (A[upperBound] - A[lowerBound])) * (x-A[lowerBound]))
+        middlepoint = middlepoint = lowerBound + ((upperBound - lowerBound) // (int(A[upperBound])- int(A[lowerBound]))) * (int(x)-int(A[lowerBound]))
 
         if x == A[middlepoint]: #if the element is equal to the middle point of the list
             index = middlepoint
