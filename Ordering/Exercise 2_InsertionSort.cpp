@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -16,7 +15,6 @@ class insertion{
 				}
 				a[index] = x;
 			}
-			
 			cout<<"\n"<<endl;
 			cout<<"The result is: "<<endl;
 			for(int i = 0; i<cont;i++){
@@ -31,7 +29,6 @@ int main(){
 	int swamp;
 	int cont=0; //will serve me to go through the array
 	string e;
-	
 	cout<<"Exersice of INSERTION SORT"<<endl;
 	cout<<" "<<endl;
 	cout<<"Enter the string of numbers separated by commas"<<endl;
@@ -44,20 +41,18 @@ int main(){
   			cont = cont +1;
 	  	}
   	}
-  	
   	int a [cont];
-  	int posiciones = 0;
-  	
+  	int positions = 0;
+	
   	for(int i =0; i<e.length(); ++i){
   		if(b[i] != ','){
-  			a[posiciones] = (int)b[i] - '0';
-			posiciones = posiciones +1;
+  			a[positions] = (int)b[i] - '0';
+			positions = positions +1;
 	  	}
   	}
-  
+	
 	insertion open = insertion(); //build
 	open.InserionSort(a,cont); //passed the array along with the counter
-	
 	return 0;
 }
 
