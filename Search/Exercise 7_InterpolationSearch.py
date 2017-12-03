@@ -7,7 +7,7 @@ def InterpolationSearch(A, x):
 
     while lowerBound < upperBound: 
         middlepoint = middlepoint = lowerBound + ((upperBound - lowerBound) // (int(A[upperBound])- int(A[lowerBound]))) * (int(x)-int(A[lowerBound]))
-
+        #convert A into an int to perform the operation
         if x == A[middlepoint]: #if the element is equal to the middle point of the list
             index = middlepoint
             break
@@ -24,13 +24,12 @@ def InterpolationSearch(A, x):
 def main():
     print("Exercise of INTERPOLATION SEARCH: ")
     print(" ")
-    A = int()
     x = int()
     print("Enter the string of numbers separated by commas: ")
-    cadena = input()
+    string = input()
     print("Enter the item to search: ")
     x = input()
-    A = cadena.split(",")
+    A = string.split(",")
     
     print(" ")
     print("The index of the item to look for is: ")
