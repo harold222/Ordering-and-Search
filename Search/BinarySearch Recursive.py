@@ -15,14 +15,14 @@ def main():
     print("Exercise of BINARY SEARCH: ")
     print(" ")
     print("Enter the string of numbers separated by commas:")
-    cadena = input()
+    string = input()
     print("Enter the item to search:")
     x = input()
-    A = cadena.split(",")
+    A = string.split(",")
     print(" ")
     lowerBound =0
     upperBound = len(A)-1
     print("The index of the element to look for is:")
-    print(BinarySearch(A,x,lowerBound,upperBound))#paso las variables a el metodo
+    print(BinarySearch(A,x,lowerBound,upperBound)
 
 main()
